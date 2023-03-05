@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  dstig-app:
+    container_name: dstig-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1880:5000"
+    restart: always
+  
